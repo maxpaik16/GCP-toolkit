@@ -83,7 +83,7 @@ public:
         const PSDProjectionMethod project_hessian_to_psd =
             PSDProjectionMethod::NONE) const = 0;
 
-    std::set<int> dofs_to_project;
+    mutable std::set<int> dofs_to_project;
 };
 
 } // namespace ipc
